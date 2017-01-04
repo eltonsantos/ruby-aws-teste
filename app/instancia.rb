@@ -7,15 +7,7 @@ class Instancia
       if env["PATH_INFO"] == '/'
         lista = Lista.new(ENV['ACCESS_KEY_ID'], ENV['SECRET_ACCESS_KEY'])
 
-        lista.listar()
-
-        return [
-                  200,
-                  {
-                    'Content-Type'  => 'text/html',
-                    'Cache-Control' => 'public, max-age=86400'
-                  }
-                ]
+        return lista.listar()
       end
     when 'POST'
       [200, {}, ["POST!"]]

@@ -4,7 +4,7 @@ class Lista
 
   def initialize(access_key_id, secret_access_key)
     Aws.config.update({
-       credentials: Aws::Credentials.new('AKIAJ7AMFSAZM3GE37YQ', '2P2U2qQqRM5GdfoOR8rYFvYBNGm45pQghaukLpGV')
+       credentials: Aws::Credentials.new('AKIAIRY5RJXP5HUNQOPQ', 'dCnoLBNz4Zw/lzd/FAq5u8IzIszgQIP8Zx5XPeM8')
     })
     Aws.config.update({region: 'sa-east-1'})
   end
