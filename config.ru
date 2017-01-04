@@ -2,9 +2,9 @@
 require 'rubygems'
 require 'bundler/setup'
 
-require './app/simplest_ruby_s3'
-require './app/uploader_s3'
+require './app/instancia'
+require './app/lista'
 
 use Rack::Reloader
 
-run SimplestRubyS3.new
+run Instancia.new
